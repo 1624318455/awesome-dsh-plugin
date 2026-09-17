@@ -1069,6 +1069,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 
 - [1069137617/dsh-reasoning-tiers](https://github.com/1069137617/dsh-reasoning-tiers) - Declares per-model reasoning-effort ladders for third-party providers in the llm-pi-ai settings section, so DSH's stock thinking-intensity selector works on models the pi-ai catalog does not describe.
 - [11zld22/dsh-model-info-fill](https://github.com/11zld22/dsh-model-info-fill) - Fills missing context window, max tokens, thinking levels, and image input on custom DSH models from models.dev, and lists unmatched models for manual edits.
+- [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) - Exposes OpenCode Zen free models to DeepSeek Harness with no API key, tracking Zen gateway changes.
 - [AdonisSheldon/dsh-openai-oauth](https://github.com/AdonisSheldon/dsh-openai-oauth) - Connect a ChatGPT account to Codex models in DeepSeek Harness through browser PKCE or device-code OAuth, with automatic token refresh and Web or headless login.
 - [amlyczz/dsh-agy-link](https://github.com/amlyczz/dsh-agy-link) - Google Antigravity (agy CLI) models for DSH — streaming chat with Gemini/Claude/GPT-OSS subscriptions, native tool cards, thinking turns, and in-GUI Google OAuth login.
 - [Ansonfishing/dsh-model-manager](https://github.com/Ansonfishing/dsh-model-manager) - Control panel for local LLM inference servers in the DSH web view: service registry with health checks and stop controls, named parameter profiles for llama.cpp, SGLang and vLLM with pre-save KV/VRAM validation, GPU detection, and tok/s benchmarks.
@@ -1237,7 +1238,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhubaohi/dsh-qwen38-compaction-fix](https://github.com/zhubaohi/dsh-qwen38-compaction-fix) - Compaction fix for NInfer-hosted qwen3.8-27b gateways: disables thinking on dsh context-compaction and session-title calls so xhigh reasoning stops burning the whole output budget; the same idea applies to other launch methods, this package targets NInfer only.
 - [Zn-Dk/dsh-zhipu-toolkit](https://github.com/Zn-Dk/dsh-zhipu-toolkit) - Dual-endpoint Zhipu BigModel GLM provider catalog (Coding Plan and ordinary API) with live model discovery, live-tested thinking-tier mapping, and a settings card for keys, endpoints and the default reasoning tier.
 - [zpis666/dsh-context-budget](https://github.com/zpis666/dsh-context-budget) - Adds per-route context window and compaction threshold fields to the Models settings page and a vendor-aware thinking-effort picker to the composer, writing llm-pi-ai capacities, reasoningEfforts, and a compaction-basic patch row.
-- [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) - Exposes OpenCode Zen free models to DeepSeek Harness with no API key, tracking Zen gateway changes.
 
 ### Identity & Communication
 
@@ -3147,6 +3147,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 ### Development & Runtime
 
 - [1123762794/dsh-web-restart](https://github.com/1123762794/dsh-web-restart) - One-click restart button for the DSH Web UI: a sidebar footer button that restarts the dsh web process with a single click and persists across the restart it triggers.
+- [1624318455/dsh-plugin-proxy](https://github.com/1624318455/dsh-plugin-proxy) - Runtime-switchable outbound HTTP/SOCKS5 proxy for DSH with a web settings card.
 - [2008924/dsh-progress-viz#plugin](https://github.com/2008924/dsh-progress-viz/tree/main/plugin) - Real-time stage, ETA & cost dashboard for headless dsh tasks: turns the black-box session event stream into a live multi-task grid (cordis plugin + standalone local dashboard, no API calls).
 - [777-Zen/dsh-capability-index](https://github.com/777-Zen/dsh-capability-index) - Pre-flight plugin-library index for DSH agents: injects per-step trigger-table hints into the runtime context so suitable installed plugins get used predictably instead of opportunistically.
 - [863683348/dsh-plugin-verify](https://github.com/863683348/dsh-plugin-verify) - Verification toolkit for DSH agents: evidence-based claim checking against workspace files with line citations, config validation (JSON/YAML), and read-only URL/npm/GitHub submission-readiness probes.
@@ -3425,7 +3426,6 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zoahdev/dsh-timesheet](https://github.com/zoahdev/dsh-timesheet) - Turn-based time tracking from dsh session logs: totals, per-day/project/provider/source rollups, tool-call counts, failure rates, and time-to-first-token — CLI plus an agent-callable timesheet tool, dsh-timesheet/v1 reports, zero runtime deps.
 - [zoahdev/dsh-unplug](https://github.com/zoahdev/dsh-unplug) - Plug/unplug any DeepSeek Harness plugin cleanly — list every mounted layer (bundles + patch rows), remove with full cleanup, disable/enable without deleting, and audit for orphaned/dangling state. CLI + agent-callable unplug tool. Read-only by default; destructive operations require explicit confirmation.
 - [zzy6-a/dsh-upgrade-guard](https://github.com/zzy6-a/dsh-upgrade-guard) - Audits installed plugin compatibility after a DeepSeek Harness upgrade, repairs or disables incompatible plugins, and keeps an out-of-host supervisor that rescues boot failures or rolls back to the previous host snapshot.
-- [1624318455/dsh-plugin-proxy](https://github.com/1624318455/dsh-plugin-proxy) - Runtime-switchable outbound HTTP/SOCKS5 proxy for DSH with a web settings card.
 
 ### Security & Permissions
 
