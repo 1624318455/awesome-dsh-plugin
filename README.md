@@ -1237,6 +1237,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zhubaohi/dsh-qwen38-compaction-fix](https://github.com/zhubaohi/dsh-qwen38-compaction-fix) - Compaction fix for NInfer-hosted qwen3.8-27b gateways: disables thinking on dsh context-compaction and session-title calls so xhigh reasoning stops burning the whole output budget; the same idea applies to other launch methods, this package targets NInfer only.
 - [Zn-Dk/dsh-zhipu-toolkit](https://github.com/Zn-Dk/dsh-zhipu-toolkit) - Dual-endpoint Zhipu BigModel GLM provider catalog (Coding Plan and ordinary API) with live model discovery, live-tested thinking-tier mapping, and a settings card for keys, endpoints and the default reasoning tier.
 - [zpis666/dsh-context-budget](https://github.com/zpis666/dsh-context-budget) - Adds per-route context window and compaction threshold fields to the Models settings page and a vendor-aware thinking-effort picker to the composer, writing llm-pi-ai capacities, reasoningEfforts, and a compaction-basic patch row.
+- [1624318455/dsh-plugin-adapter](https://github.com/1624318455/dsh-plugin-adapter) - Exposes OpenCode Zen free models to DeepSeek Harness with no API key, tracking Zen gateway changes.
 
 ### Identity & Communication
 
@@ -3424,6 +3425,7 @@ A listing isn't permanent either: entries whose repos go away, stop being mainta
 - [zoahdev/dsh-timesheet](https://github.com/zoahdev/dsh-timesheet) - Turn-based time tracking from dsh session logs: totals, per-day/project/provider/source rollups, tool-call counts, failure rates, and time-to-first-token — CLI plus an agent-callable timesheet tool, dsh-timesheet/v1 reports, zero runtime deps.
 - [zoahdev/dsh-unplug](https://github.com/zoahdev/dsh-unplug) - Plug/unplug any DeepSeek Harness plugin cleanly — list every mounted layer (bundles + patch rows), remove with full cleanup, disable/enable without deleting, and audit for orphaned/dangling state. CLI + agent-callable unplug tool. Read-only by default; destructive operations require explicit confirmation.
 - [zzy6-a/dsh-upgrade-guard](https://github.com/zzy6-a/dsh-upgrade-guard) - Audits installed plugin compatibility after a DeepSeek Harness upgrade, repairs or disables incompatible plugins, and keeps an out-of-host supervisor that rescues boot failures or rolls back to the previous host snapshot.
+- [1624318455/dsh-plugin-proxy](https://github.com/1624318455/dsh-plugin-proxy) - Runtime-switchable outbound HTTP/SOCKS5 proxy for DSH with a web settings card.
 
 ### Security & Permissions
 
